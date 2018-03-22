@@ -1,0 +1,176 @@
+body{
+	font-family: helvetica;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+}
+
+#mainHeading {
+	font-size: 40px;
+	text-align: center;
+	margin-top: 100px;
+	color: white;
+}
+
+p {
+	font-size: 24px;
+	text-align: center;
+	padding-top: 20px;
+	color: white;
+}
+
+#day , #night {
+	width: 100%;
+	height: 100%;
+	margin-top: -10px;
+	margin-left: -8px;
+	position: absolute;
+	z-index: -1;
+	display: none;
+}
+
+#daymobiel, #nightmobiel {
+	width: 100%;
+	height: 100%;
+	margin-top: -10px;
+	margin-left: -8px;
+	position: absolute;
+	z-index: -1;
+}
+
+#time-date {
+	margin-top: 200px;
+	position: absolute;
+	z-index: 2;
+	width: 95%;
+	height: 300px;
+	border-radius: 10px;
+	border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* code voor digitale klok */
+
+body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn {
+	color: #CCCCCC; 
+	background-color: #595959;
+}
+
+body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a {
+	color: #323434;
+}
+
+/* Einde  code voor digitale klok */
+
+@media only screen and (min-width: 768px) and (max-width: 1365px) { /* ipad versie*/
+	body{
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	#mainHeading {
+		font-size: 45px;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	p {
+		font-size: 30px;
+	}
+
+	#day , #night {
+		width: 100%;
+		height: 100%;
+		margin-top: -10px;
+		margin-left: -8px;
+		position: absolute;
+		z-index: -1;
+		display: block;
+	}
+
+	#daymobiel, #nightmobiel {
+		display: none;
+	}
+
+	#time-date {
+		margin-left: 10px;
+	}
+
+}
+@media only screen and (min-width: 1366px) and (max-width:1620px) { /* desktop versie*/
+	body{
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	#mainHeading {
+		font-size: 45px;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	p {
+		font-size: 32px;
+	}
+
+	#day , #night {
+		width: 100%;
+		margin-top: -10px;
+		margin-left: -8px;
+		position: absolute;
+		z-index: -1;
+		display: block;
+	}
+
+	#daymobiel, #nightmobiel {
+		display: none;
+	}
+
+	#time-date {
+		margin-left: 28px;
+	}
+
+}
+
+@media only screen and (min-width: 1620px) { /* iMac versie*/
+	body{
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	#mainHeading {
+		font-size: 45px;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	p {
+		font-size: 32px;
+	}
+
+	#day , #night {
+		width: 100%;
+		margin-top: -10px;
+		margin-left: -8px;
+		position: absolute;
+		z-index: -1;
+		display: block;
+	}
+
+	#daymobiel, #nightmobiel {
+		display: none;
+	}
+
+	#time-date {
+		margin-left: 28px;
+	}
+
+}
+
+
